@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FlatList, View } from 'react-native';
+import { FlatList, View, Text } from 'react-native';
 import { Tile } from 'react-native-elements';
 import { connect } from 'react-redux';
 import { baseUrl } from '../shared/baseUrl';
@@ -26,7 +26,7 @@ class Directory extends Component {
                     caption={item.description}
                     featured
                     onPress={() => navigate('CampsiteInfo', { campsiteId: item.id })}
-                    imgSrc={{ uri: baseUrl + item.image}}
+                    imageSrc={{ uri: baseUrl + item.image}}
                 />
             );
         };
