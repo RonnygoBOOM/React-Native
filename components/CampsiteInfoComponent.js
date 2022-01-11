@@ -130,7 +130,7 @@ function RenderComments({comments}) {
 
     const renderCommentItem = ({item}) => {
         return(
-        <View style = {{maring: 10}}>
+        <View style = {{margin: 10}}>
             <Text style={{fontSize: 14}}>{item.text}</Text>
             <Rating 
             startingValue={item.rating}
